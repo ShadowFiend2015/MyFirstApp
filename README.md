@@ -12,3 +12,9 @@ construct a platform by meteor &amp; angular2 &amp; ionic2
 
 # mirror
 1. npm taobao: `npm config set registry https://registry.npm.taobao.org`
+
+Bugs:
+1.no limit of likes and favorites
+2.article show is sick
+3.size and location of the login icon seems bad
+4.disable to delete published articles
