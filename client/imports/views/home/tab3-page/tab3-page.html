@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>写博客</ion-title>
+        <ion-buttons start>
+            <button ion-button (click)="submitArticle()">
+                发表
+            </button>
+        </ion-buttons>
+        <ion-buttons end>
+            <button ion-button (click)="clearContent()">
+                清空
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="r3t-sign">
+    <ion-item>
+        <ion-label color="primary">标题：</ion-label>
+        <ion-input type="text" [(ngModel)]="article.articleTitle" placeholder="请输入标题"></ion-input>
+    </ion-item>
+    <div class="container">
+        <div class="grid">
+            <ion-label fixed>内容：</ion-label>
+            <ion-textarea rows="23" [(ngModel)]="article.articleContent" placeholder="博客正文"></ion-textarea>
+        </div>
+    </div>
+</ion-content>

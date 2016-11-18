@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>详情</ion-title>
+        <ion-buttons start>
+            <button ion-button (click)="goBackToHomePage()"></button>
+        </ion-buttons>
+        <ion-buttons end>
+            <button ion-button (click)="clearContent()" [hidden]="abc" >
+                清空
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>{{article.articleTitle}}</ion-item>
+    </ion-list>
+    <div style="padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+        <pre>{{article.articleContent}}</pre>
+    </div>
+</ion-content>
+
+<ion-footer>
+    <ion-row>
+        <ion-col>
+            <button ion-button icon-left block primary outline (click)="likeThisArticle()">
+                <ion-icon name="thumbs-up"></ion-icon>
+                赞
+            </button>
+        </ion-col>
+        <ion-col>
+            <button ion-button icon-left block primary outline (click)="favoriteThisArticle()">
+                <ion-icon name="heart"></ion-icon>
+                收藏
+            </button>
+        </ion-col>
+    </ion-row>
+</ion-footer>

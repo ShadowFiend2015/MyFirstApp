@@ -1,0 +1,12 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>收藏</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let article of articles" (click)="readArticle(article)">
+            {{article.articleTitle}}
+        </ion-item>
+    </ion-list>
+</ion-content>
